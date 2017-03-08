@@ -1,0 +1,150 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+h1, h2{
+	font-family: 'Pacifico', cursive;
+	font-weight: lighter;
+	text-align: center;
+}
+h1 {
+	text-shadow: 5px 5px 5px #353535;
+	font-size: 90px;
+	color: white;
+}
+h2 {
+	color: rgba(158, 158, 158, 0.92);
+	font-size: 45px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+p {
+	font-family: 'Avenir Next Condensed', sans-serif;
+	text-shadow: 5px 5px 5px #353535;
+	color: white;
+	font-size: 25px;
+	font-weight: lighter;
+	margin-top: -60px;
+	text-align: center;
+}
+img {
+	width: 25px;
+	display: inline-block; ;
+}
+section {
+	z-index: 0;
+	background-color: rgba(88, 87, 87, 0.73);
+	margin: auto;
+	margin-top: 5%;
+	width: 70%;
+	box-shadow: 5px 5px 5px #353535;
+}
+
+
+/* Class Styling */
+.emily {
+	padding-top: 25px;
+}
+.travis {
+	margin-top: -125px;
+}
+.socials {
+	margin-left: 6px;
+}
+.hash {
+	font-weight: normal;
+	text-align: left;
+	font-family: 'Avenir Next Condensed', sans-serif;
+	text-shadow: 5px 5px 5px #353535;
+	color: white;
+	font-size: 25px;
+}
+
+
+/* To tilt 'Emily & Travis' */
+.rotate {
+/* Safari */
+-webkit-transform: rotate(-10deg);
+/* Firefox */
+-moz-transform: rotate(-10deg);
+/* IE */
+-ms-transform: rotate(-10deg);
+/* Opera */
+-o-transform: rotate(-10deg);
+}
+
+
+/* Responsiveness! */
+@media screen and (min-width: 1150px) {
+  body {
+    background: url('images/dancing.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1149px) {
+  body {      
+    background: url('images/dancing2.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+  }
+}
+
+
+/* iPad */
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  body {
+    background: url('images/dancing3.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+  }
+  h1 {
+  	font-size: 75px;
+  }
+  p {
+  	margin-top: -10px;
+  	font-size: 30px;
+  }
+  .travis {
+	margin-top: -100px;
+  }
+  .hash {
+  	font-size: 25px;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 414px) {
+  body {
+    background: url('images/dancing4.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+  }
+  h1 {
+  	font-size: 55px;
+  }
+  h2 {
+	padding-left: 45px;
+	padding-right: 45px;
+  	font-size: 25px;
+  	margin-top: 45px;
+  	margin-bottom: 45px;
+  }
+  .travis {
+	margin-top: -90px;
+  }
+  p {
+  	margin-top: -10px;
+  	font-size: 20px;
+  }
+  .hash {
+  	font-size: 20px;
+  }
+}
